@@ -8,6 +8,8 @@ const todos = (state={}, action) => {
       };
       Tasks.insert(task);
       return task;
+    case 'DEL_TODO':
+      Tasks.remove(action.id)
     default:
       return state
   }

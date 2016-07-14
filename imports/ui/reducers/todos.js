@@ -9,7 +9,18 @@ const todos = (state={}, action) => {
       Tasks.insert(task);
       return task;
     case 'DEL_TODO':
-      Tasks.remove(action.id)
+      Tasks.remove(action.id);
+      return (
+        action.id
+      );
+    case 'UPDATE_TODO':
+      Tasks.update({_id:action.id}, {$set:{
+        text:action.text
+      }});
+      return (
+        action.id,
+        action.text
+      );
     default:
       return state
   }

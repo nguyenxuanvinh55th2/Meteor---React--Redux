@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import { connect } from 'react-redux';
 import { delTodo } from '../actions';
+import { updateTodo } from '../actions';
 import { createContainer } from 'meteor/react-meteor-data'
 
 import TodoList from '../components/TodoList.jsx'
@@ -24,6 +25,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onDelete: (id) => {
       dispatch(delTodo(id))
+    },
+    onUpdate:(id,text)=>{
+      dispatch(updateTodo(id,text))
     }
   }
 }

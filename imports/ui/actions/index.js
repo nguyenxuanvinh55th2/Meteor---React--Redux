@@ -10,3 +10,10 @@ export const delTodo = (id) => {
     id
   }
 }
+export const updateTodo =(id,text) => {
+  return{
+    type: 'UPDATE_TODO',
+    id,
+    text
+  }
+}

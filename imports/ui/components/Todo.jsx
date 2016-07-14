@@ -4,7 +4,7 @@ export default class Todo extends Component{
   render(){
     return(
       <div>
-        <li >
+        <li onClick={this.props.onUp} >
           {this.props.task.text}
         </li>
           <button onClick={this.props.onDel}>X</button>
@@ -16,5 +16,6 @@ export default class Todo extends Component{
 
 Todo.propTypes = {
   task: PropTypes.object.isRequired,
-  onDel:PropTypes.func.isRequired
+  onDel:PropTypes.func.isRequired,
+  onUp: PropTypes.func.isRequired
 }

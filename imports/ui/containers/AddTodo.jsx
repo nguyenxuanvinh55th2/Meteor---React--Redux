@@ -8,6 +8,7 @@ class AddTodo extends Component {
   render(){
     return (
       <div>
+        
         <form onSubmit={e => {
           e.preventDefault()
           if (!this.input.value.trim()) {

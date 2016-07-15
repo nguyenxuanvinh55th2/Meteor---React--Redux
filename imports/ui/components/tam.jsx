@@ -8,7 +8,7 @@ class Tam extends Component {
     return (
       <div>
         <p>{this.props.params.id}</p>
-      <p>vinh dep trai</p>
+      <p> this is page Tam</p>
       </div>
     )
   }

@@ -9,6 +9,7 @@ class Tam extends Component {
       <div>
         <p>{this.props.params.id}</p>
       <p> this is page Tam</p>
+      <Link to ="/">Go to Home</Link>
       </div>
     )
   }

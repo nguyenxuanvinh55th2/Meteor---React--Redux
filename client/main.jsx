@@ -5,7 +5,7 @@ import { createStore } from 'redux'
 import todoApp from '../imports/ui/reducers'
 import App from '../imports/ui/components/App.jsx'
 import { renderRoutes } from '../imports/startup/client/routes.js';
-let store = createStore(todoApp);
+let store = createStore(todoApp, window.devToolsExtension && window.devToolsExtension());
 Meteor.startup(() => {
   render(
     <Provider store={store}>

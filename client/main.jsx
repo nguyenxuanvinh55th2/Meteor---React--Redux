@@ -10,6 +10,7 @@ Meteor.startup(() => {
   render(
     <Provider store={store}>
       {renderRoutes()}
+      {/* <App/> */}
     </Provider>,
     document.getElementById('root'));
 });

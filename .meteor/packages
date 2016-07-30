@@ -23,3 +23,10 @@ webpack:webpack
 webpack:react
 webpack:less
 apollo
+service-configuration
+twbs:bootstrap
+less
+accounts-facebook
+accounts-ui
+accounts-password
+meteorhacks:ssr

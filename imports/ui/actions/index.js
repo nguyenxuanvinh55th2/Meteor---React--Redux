@@ -17,3 +17,16 @@ export const updateTodo =(id,text) => {
     text
   }
 }
+
+export const loginFace =() => {
+  return{
+    type: 'LOGIN_FACE'
+  }
+}
+
+export const sendToEmail =(text) => {
+  return{
+    type: 'SEND_EMAIL',
+    text
+  }
+}

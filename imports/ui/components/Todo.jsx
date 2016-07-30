@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-
+import './tam.less'
 export default class Todo extends Component{
   render(){
     return(
@@ -7,7 +7,9 @@ export default class Todo extends Component{
         <li onClick={this.props.onUp} >
           {this.props.task.text}
         </li>
-          <button onClick={this.props.onDel}>X</button>
+          <button  className="btn btn-info "
+          onClick={this.props.onDel} style={{ color: 'red'}}>
+          X</button>
       </div>
 
     )

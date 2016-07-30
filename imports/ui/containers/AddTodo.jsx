@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 import {browserHistory,Link} from 'react-router'
+import {Meteor} from 'meteor/meteor'
 class AddTodo extends Component {
 
   addclick()
@@ -10,9 +11,14 @@ class AddTodo extends Component {
 
     browserHistory.push("/");
   }
+  loggin(){
+
+  }
+
   render(){
     return (
       <div>
+
 
         <form onSubmit={e => {
           e.preventDefault()

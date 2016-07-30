@@ -2,8 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import { connect } from 'react-redux';
-import { delTodo } from '../actions';
-import { updateTodo } from '../actions';
+import { delTodo,updateTodo } from '../actions';
 import { createContainer } from 'meteor/react-meteor-data'
 
 import TodoList from '../components/TodoList.jsx'

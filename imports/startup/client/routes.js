@@ -5,14 +5,18 @@ import { Router, Route, browserHistory } from 'react-router'
 import App from '../../ui/components/App.jsx'
 import Tam from '../../ui/components/tam.jsx'
 import AddTodo from '../../ui/containers/AddTodo'
-
+import {Meteor} from 'meteor/meteor'
 function requireAuth(nextState, replace) {
   console.log("this is ok author");
+    if(Meteor.userId())
 
     replace({
       pathname: '/',
       state: { nextPathname: nextState.location.pathname }
     })
+    else {
+      alert("this ok");
+    }
 }
 
 export const renderRoutes = () => (
